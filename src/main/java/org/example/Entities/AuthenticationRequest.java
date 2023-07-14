@@ -1,4 +1,4 @@
-package org.example.models;
+package org.example.Entities;
 
 public class AuthenticationRequest {
     public String email;

@@ -1,13 +1,10 @@
-package org.example.JsonStorage;
+package org.example.Entities;
 
 import javax.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-import org.example.models.JwtUser;
 import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.SourceType;
 import org.hibernate.annotations.UpdateTimestamp;
-import org.hibernate.mapping.ToOne;
 
 import java.time.Instant;
 

@@ -1,4 +1,4 @@
-package org.example.JsonStorage;
+package org.example.Entities;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -10,7 +10,7 @@ public class JsonStorageCrux {
     private String templateName;
     private String mode;
     private long id;
-    JsonStorageCrux(String orgCode,String templateName,String mode,long id) {
+    public JsonStorageCrux(String orgCode, String templateName, String mode, long id) {
         this.id = id;
         this.orgCode = orgCode;
         this.templateName = templateName ;

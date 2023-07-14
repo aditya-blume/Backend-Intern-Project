@@ -1,4 +1,4 @@
-package org.example.jwt;
+package org.example.Filters;
 
 import org.example.util.jwtUtil;
 import org.example.Services.MyUserDetailsService;

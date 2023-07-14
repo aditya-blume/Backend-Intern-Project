@@ -1,4 +1,4 @@
-package org.example.JsonStorage;
+package org.example.Entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

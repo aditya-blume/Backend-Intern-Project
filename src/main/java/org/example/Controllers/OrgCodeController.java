@@ -1,4 +1,6 @@
-package org.example.OrgCode;
+package org.example.Controllers;
+import org.example.Entities.OrgCode;
+import org.example.Services.OrgCodeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,7 +13,7 @@ import java.util.List;
 @CrossOrigin(origins = "http://localhost:3000")
 public class OrgCodeController {
     @Autowired
-    private  OrgCodeService orgCodeService;
+    private OrgCodeService orgCodeService;
 
     @PostMapping
     public ResponseEntity<String> saveOrgCode(@RequestBody OrgCode orgCode) {

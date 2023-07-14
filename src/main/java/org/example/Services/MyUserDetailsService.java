@@ -1,5 +1,5 @@
-package org.example.MyUserDetailsService;
-import org.example.models.JwtUser;
+package org.example.Services;
+import org.example.Entities.JwtUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -8,7 +8,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import org.example.models.JwtUserRepository;
+import org.example.Respositories.JwtUserRepository;
 
 
 @Service

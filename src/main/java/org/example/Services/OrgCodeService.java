@@ -1,4 +1,6 @@
-package org.example.OrgCode;
+package org.example.Services;
+import org.example.Entities.OrgCode;
+import org.example.Respositories.OrgCodeRepository;
 import org.example.exception.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

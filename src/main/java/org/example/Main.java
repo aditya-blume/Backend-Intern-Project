@@ -1,14 +1,14 @@
 package org.example;
 
-import io.jsonwebtoken.impl.AbstractTextCodec;
-import org.example.MyUserDetailsService.MyUserDetailsService;
-import org.example.models.*;
-import org.hibernate.Session;
+import org.example.Entities.AuthenticationResponse;
+import org.example.Entities.JwtUser;
+import org.example.Entities.LoginRequest;
+import org.example.Entities.SignUpRequest;
+import org.example.Services.MyUserDetailsService;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseCookie;
 import org.springframework.http.ResponseEntity;
@@ -18,14 +18,12 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 import org.example.util.jwtUtil;
-import org.example.SignUpRequest;
-import org.example.models.JwtUserRepository;
-import org.example.SecurityConfigurer.*;
+import org.example.Respositories.JwtUserRepository;
+
 @SpringBootApplication
 @EnableAutoConfiguration
 @ComponentScan

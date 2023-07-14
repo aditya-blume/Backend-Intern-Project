@@ -1,6 +1,6 @@
 package section;
 
-import org.example.JsonStorage.JsonStorage;
+import org.example.Entities.JsonStorage;
 import tiles.Tiles;
 
 import javax.persistence.*;

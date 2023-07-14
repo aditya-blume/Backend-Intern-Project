@@ -1,4 +1,4 @@
-package org.example.JsonStorage;
+package org.example.Respositories;
 
 import org.example.Entities.JsonStorage;
 import org.springframework.data.jpa.repository.Query;
